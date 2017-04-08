@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" />
+<title>final_project_proposal</title>
+
+<title>CS 184 Final Project Proposal</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+
+<body>
+
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2017</h1>
+<h1 align="middle">Fun with Whirlpools</h1>
+<h2 align="middle">Victor Vong, CS184-aax</h2>
+<h2 align="middle">Blake Tickell, CS184-axn</h2>
+
+<br><br>
+
+<div>
+
+<h2 align="middle">Overview</h2>
+
+
+<p>We aim to accurately approximate fluid dynamics and create convincing 3D simulations of a few interesting environments. We hope animate water pouring into a container, waves in a basin, a whirlpool, and multifluid mixing (i.e. oil and water).</p>
+
+<p><b>Prompt:</b> Here you should provide the context for your idea. Describe the problem that you are trying to solve, why it is important, where it is challenging. Give us a general idea on how you are going to solve it.</p>
+
+<p> A common task in animation is to closely approximate real world phenomenon inside a virtual scene. Fluids are an important subset of these phenomenon as many real-world environments include fluid in some form. There are many challenges that we have to deal with. These come from the sheer magnitude of particles interacting with eachother all at once and the hugely chaotic system of a liquid body. By enforcing strong abstraction barriers and following the physical-based rendering paradigm, many of the complicated emergent behaviors that we associate with liquids occur naturally as a result of a few basic assumptions.</p>
+
+<p><b>Prompt:</b> What are you trying to accomplish, what results are you going for, and why do you think you can accomplish those goals</p>
+
+<p>We are trying to simulate several different fluid dynamical systems. We are aiming to showcase a particle render and a density map over the render space.</p>
+
+<p><b>What we plan to deliver</b></p>
+
+<p>We plan to deliver the following for each scene simulation we mentioned above:</p>
+<ol>
+<li>particle simulation rendering</li>
+<li>a density map over the render space (these will be useful to see if our render roughly follows what we expect)</li> 
+<li>given scene parameters: 
+    <ul>
+        <li>fluid types</li> 
+        <li>fluid properties (i.e. viscosity, inital position, color)</li>
+        <li>system properties (i.e. graviety, scene setup)</li>
+    </ul>
+</li>
+
+</ol>
+
+<p><b>What we aim to deliver</b></p>
+
+<p>We aim to deliver all of the above along with an ellipsoid splatted fluid approximation, where we take the aforementioned particle simulation and use it to approximate a realistic fluid by "smoothing" the descrete particles into a continuous liquid surface. This will be tricky.</p>
+
+
+<p><b>SCHEDULE:</b> 
+
+<lo>
+
+<li>
+<b>Week 1:</b> Break down algorithm(s) into digestible pieces and have a rough working particle simulation: Creating a scene, and creating the Particles.
+</li>
+
+<li>
+<b>Week 2:</b> Handle Particle interaction with the scene and themselves
+</li>
+
+<li>
+<b>Week 3:</b> Start modelling the proposed systems and preliminary rendering and deliverable generation
+</li>
+
+<li>
+<b>Week 4:</b> Ellipsoid splatting and high-fidelity rendering and relax cause we finished early, then panic because we forgot the poster
+</li>
+
+
+</lo></p>
+
+<p><b>RESOURCES:</b></p>
+<p>Position Based Fluids by Macklin and Müller</p>
+<p>Smooth Particle Hydrodynamics and its Diverse Applications by Monaghan</p>
+<p>Reconstructing Surfaces of Particle-Based Fluids Using Anisotropic Kernels by Jihun Yu and Greg Turk</p>
+</div>
+</body>
+</html>
